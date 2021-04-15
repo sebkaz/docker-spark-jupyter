@@ -5,7 +5,7 @@ FROM ubuntu
 RUN apt-get update && yes | apt-get upgrade
 
 # adding java 8 
-RUN apt-get install -y openjdk-8-jdk scala 
+RUN apt-get install -y openjdk-8-jdk
 RUN java -version
 # Adding python3 and pip3
 RUN apt-get install -y python3 python3-pip 
