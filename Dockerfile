@@ -31,6 +31,8 @@ RUN pip3 install jupyter pandas numpy matplotlib sklearn pyspark findspark
 # Configuring access to Jupyter
 WORKDIR /notebooks/
 
+RUN git clone https://github.com/sebkaz-teaching/RTA.git
+
 # Configuring access to Jupyter
 
 RUN jupyter notebook --generate-config --allow-root
